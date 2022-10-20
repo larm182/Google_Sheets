@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ url_for("static", filename="style.css") }}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<title>Formulario Google Sheets</title>
+</head>
+<body>
+	<div class="box">
+		<div class="form">
+			<h2>Formulario Google Sheets</h2>
+			<form method="POST">
+				<div class="inputBox">
+					<input type="text" required ="required" name="fecha">
+					<span>Fecha</span>
+					<i></i>
+				</div>
+
+				<div class="inputBox">
+					<input type="text" required ="required" name="valor">
+					<span>Valor</span>
+					<i></i>
+				</div>
+
+				<div class="inputBox">
+					<input type="text" required ="required" name="descripcion">
+					<span>Descripcion</span>
+					<i></i>
+				</div>
+
+				<div class="inputBox">
+					<input type="text" required ="required" name="categoria">
+					<span>Categoria</span>
+					<i></i>
+				</div>
+				<div class="links">
+					<a href="#"></a>
+					<a href="#"></a>
+				</div>
+		
+				<input type="submit" value="Enviar" formaction="/envia">
+			</form>
+
+
+		</div>
+	</div>
+		<div class="left">
+			<img src="static/img/imagen.png">
+			
+		</div>
+
+
+</body>
+</html>
